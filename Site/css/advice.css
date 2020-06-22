@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+
+html {
+  scroll-behavior: smooth;
+}
+
+.menu {
+  
+  list-style: none;
+  margin: 40px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: white;
+}
+.menu li {display: inline-block;}
+.menu li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu li:last-child:after {content: none;}
+.menu a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu a, .menu a:visited {color: #9d999d;}
+.menu a.current, .menu a:hover{color: #feb386;}
+.menu a:before,
+.menu a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #feb386;
+  transition: .8s;
+}
+.menu a:hover:before, .menu .current:before {left: 0;}
+.menu a:hover:after, .menu .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu {padding-top: 0;}
+.menu li {display: block;}
+.menu li:after {content: none;}
+.menu a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+
+.main-header{
+  display: flex;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 20px;
+}
+
+.page-top{
+  display: flex;
+  background: #d1d1d1;
+} 
+.top-part{
+  display: block;
+}
+.inf-img{
+  display: block;
+  width: 300px;
+  height: 250px;
+  border-radius: 23px;
+}
+
+.page-top-header{
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+}
+
+.top-text{
+   font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 3px;
+}
+
+
+.second-header{
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 10px;
+}
+
+
+.centre-part{
+  display: block;
+}
+
+
+
+.page-centre{
+    display: flex;
+  background: #d1d1d1;
+}
+
+
+
+.centre-text{
+     font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 3px;
+}
+
+.page-centre-header{
+    font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+}
+
+
+
+.page-bottom{
+  display: flex;
+  background: #d1d1d1;
+}
+
+.bottom-part{
+    display: block;
+}
+
+.bottom-text{
+     font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 3px;
+}
+
+
+.page-bottom-header{
+    font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+}
+
+.container{
+  display:flex;
+  width: 100%;
+  height: 50px;
+  background: #8403fc;
+  justify-content: space-between;
+}
+
+
+.left-column{
+  display: block;
+}
+
+.central-column{
+   display: block;
+}
+
+.right-column{
+   display: block;
+}
+
+.column-container{
+  background: #0a0a0a;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.string{
+ font-family: 'Ubuntu Condensed', sans-serif;
+letter-spacing: 3px;
+color: white;
+}
+
+.column-header{
+   font-family: 'Ubuntu Condensed', sans-serif;
+letter-spacing: 3px;
+color: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+.bottom-text{
+  padding-left: 10px;
+}
+
+
+.top-text{
+  padding-left: 10px;
+}
+
+
+.page-bottom-header{
+  padding-left: 10px;
+}
+
+.page-centre-header{
+  padding-left: 10px;
+}
+
+.page-top-header{
+  padding-left: 10px;
+}
+
+.second-header{
+  padding-left: 10px;
+}
+
+
+@media(max-width:828px){
+ .inf-img{
+display: none;
+ }
+.second-header{
+  display: none;
+}
+}
+
+@media(max-width: 375px){
+  .container{
+    display: none;
+  }
+  .column-container{
+    flex-direction: column;
+  }
+
+}

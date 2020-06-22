@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption');
+.top-menu {
+  margin: 0 60px;
+  position: relative;
+  background:/*#5A394E;*/grey;    
+  box-shadow: 
+    inset 1px 0 0 rgba(255,255,255,.1), 
+    inset -1px 0 0 rgba(255,255,255,.1), 
+    inset 150px 0 150px -150px rgba(255,255,255,.12), 
+    inset -150px 0 150px -150px rgba(255,255,255,.12);
+}
+
+
+html{
+  background-color: orange;
+
+   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+
+
+
+
+.top-menu:before,
+.top-menu:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  width: 100%;
+  height: 3px;
+}
+.top-menu:before {
+  top: 0;
+  border-bottom: 1px dashed rgba(255,255,255,.2);
+}
+.top-menu:after {
+  bottom: 0;
+  border-top: 1px dashed rgba(255,255,255,.2);
+}
+.menu-main {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.menu-main:before, 
+.menu-main:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 0;
+  top: 8px;
+  border-top: 18px solid grey;
+  border-bottom: 18px solid grey;
+  transform: rotate(360deg);
+  z-index: -1;
+}
+.menu-main:before {
+  left: -30px;
+  border-left: 12px solid rgba(255, 255, 255, 0);
+}
+.menu-main:after {
+  right: -30px;
+  border-right: 12px solid rgba(255, 255, 255, 0);
+}
+.menu-main li {
+  display: inline-block;
+  margin-right: -4px;
+}
+.menu-main a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 30px;
+  font-family: 'PT Sans Caption', sans-serif;
+  color: white;
+  transition: .3s linear;
+}
+.menu-main ,
+.menu-main a:hover {background: rgba(0,0,0,.2);}
+@media (max-width: 680px) {
+.top-menu {margin: 0;}
+.menu-main li {
+  display: block;
+  margin-right: 0;
+}
+.menu-main:before, 
+.menu-main:after {content: none;}
+.menu-main a {display: block;}
+}
+
+
+
+
+
+.up {
+    text-shadow: 1px 2px 3px black; 
+    font-size: 2em; 
+   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+
+
+
+.top1{
+  border-radius: 15%;
+  width: 200px;
+  height: 150px;
+}
+
+
+
+.top2{
+  border-radius: 15%;
+  width: 200px;
+  height: 150px;
+ 
+}
+
+
+.top3{
+  border-radius: 15%;
+    width: 200px;
+  height: 150px;
+}
+
+.top4{
+  border-radius: 15%;
+    width: 200px;
+  height: 150px;
+}
+
+.top5{
+  border-radius: 15%;
+    width: 200px;
+  height: 150px;
+}
+
+.top6{
+  border-radius: 15%;
+   width: 200px;
+  height: 150px;
+}
+
+.top7{
+  border-radius: 15%;
+    width: 200px;
+  height: 150px;
+}
+
+.top8{
+  border-radius: 15%;
+    width: 200px;
+  height: 150px;
+}
+
+.top9{
+  border-radius: 15%;
+    width: 200px;
+  height: 150px;
+}
+
+.top10{
+  border-radius: 15%;
+    width: 200px;
+  height: 150px;
+}
+
+.first{
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.second {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.third{
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.fourth{
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.fifth{
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.sixth{
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+
+
+.seventh{
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.eighth{
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+
+.ninth{
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+
+.tenth{
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+
+
+.about{
+  border-radius: 7%;
+  background: grey;
+  border: double;
+  height: 147px;
+  width: 600px;
+}
+
+.about:hover{
+  background: cadetblue;
+}
+
+.description{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+
+ h2{
+  display: flex;
+   text-shadow: 1px 2px 3px black/*, 0 0 1em red*/; 
+    font-size: 2em; 
+   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+ }
+
+ .button {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0,0,0,.1);
+  transition: .3s;
+}
+.button:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46,229,157,.4);
+  color: white;
+  transform: translateY(-7px);}
+
+.imgsoc{
+  width: 20px;
+  height: 20px;
+}
+
+
+
+h5{
+  background: grey;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color: red;
+}
+
+
+ .statement{
+
+  background: grey;
+   border: double;
+   border-radius: 7%;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 15px;
+    -moz-column-gap: 15px;
+    column-gap:15px;
+ }
+
+
+footer{
+  width: 100%;
+  background: white ;
+}
+
+h3{
+  font-family:  capital;
+}
+
+.disadvantages{
+  padding-top: 18px;
+}
+
+
+
+
+li{
+list-style-type: none;
+}
+
+.about{
+transition-property: background-color, color;
+  transition-duration: 3s;
+  transition-delay: 0s, 1s;
+  transition-timing-function: cadetblue(0.1, 0.8, 0.5, 2), linear;
+}
+
+@media (max-width: 828px){
+.first,
+.second,
+.third,
+.fourth,
+.fifth,
+.sixth,
+.seventh,
+.eighth,
+.ninth,
+.tenth{
+  flex-direction: column;
+}
+
+.description{
+  flex-direction: column;
+}
+
+.about{
+  width: 400px;
+  height: 200px;
+}
+
+  .statement{
+    display: none;
+  }
+}
+
+@media(max-width: 375px){
+.about{
+width: 348px;
+height: 205px;
+}
+  .statement{
+    display: none;
+  }
+  .description{
+  flex-direction: column;
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth,
+.sixth,
+.seventh,
+.eighth,
+.ninth,
+.tenth{
+  flex-direction: column;
+}
+
+}
